@@ -5,10 +5,9 @@ import { Wordmark } from '@/components/Wordmark'
 import { colors, fonts } from '@/theme/tokens'
 
 const links: Array<{ to: string; label: string }> = [
-  { to: '/', label: 'One-pager' },
+  { to: '/', label: 'Menu' },
   { to: '/logos', label: 'Logos' },
-  { to: '/wordmark', label: 'Wordmark' },
-  { to: '/apply', label: 'Applied' },
+  { to: '/atomic', label: 'Atomic Deep-Dive' },
 ]
 
 export function Header() {

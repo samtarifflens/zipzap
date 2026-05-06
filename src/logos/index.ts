@@ -1,59 +1,74 @@
 import type { LogoDefinition } from '@/logos/types'
 
-import { BoltBadge } from '@/logos/BoltBadge'
-import { ZZMonogram } from '@/logos/ZZMonogram'
 import { Sparky } from '@/logos/Sparky'
-import { PlugFace } from '@/logos/PlugFace'
-import { MileHigh } from '@/logos/MileHigh'
-import { ServicePatch } from '@/logos/ServicePatch'
+import { BoltZ } from '@/logos/BoltZ'
+import { LiveWire } from '@/logos/LiveWire'
+import { KilowattCrest } from '@/logos/KilowattCrest'
+import { WaveMark } from '@/logos/WaveMark'
 
-export const logos: LogoDefinition[] = [
-  {
-    id: 'bolt-badge',
-    number: 1,
-    name: 'Bolt Badge',
-    description:
-      "1950s service-station badge — navy ring, sunshine disc, perimeter text reading 'ZIP ZAP · DENVER, CO'. Stamps onto invoices, business cards, and patches with zero loss of identity.",
-    Component: BoltBadge,
-  },
+export interface LogoConcept extends LogoDefinition {
+  // Friendly nicknames so the user can say "I like #3"
+  shortName: string
+  // Which brand directions this concept fits naturally
+  bestFor: string[]
+  // What kind of shape this is — to make the spread feel meaningfully different
+  shape: string
+}
+
+export const logos: LogoConcept[] = [
   {
     id: 'sparky',
-    number: 2,
-    name: 'Sparky',
+    number: 1,
+    name: 'Sparky the Mascot',
+    shortName: 'Sparky',
     description:
-      'The mascot — a friendly cartoon lightning bolt with eyes, blush, and a smile. Goes on truck doors, hard hats, and apparel. Kids will draw him on the fridge.',
+      'A friendly cartoon lightning bolt with eyes, blush, and a smile. The brand has a face — kids will draw him on the fridge, and he can star in TikToks. Goes everywhere from truck doors to coloring sheets.',
+    bestFor: ['Cartoon Mascot', 'Atomic Mid-Century'],
+    shape: 'Cartoon character',
     Component: Sparky,
   },
   {
-    id: 'plug-face',
+    id: 'bolt-z',
+    number: 2,
+    name: 'Bolt-Z Monogram',
+    shortName: 'Bolt-Z',
+    description:
+      'A single chunky letter Z whose diagonal stroke is drawn as a lightning bolt. Reads as Z and as electrical current at the same time. One mark, one company — clean, modern, scales to a favicon.',
+    bestFor: ['Modern Trade-Tech', 'Quiet Pro'],
+    shape: 'Letterform monogram',
+    Component: BoltZ,
+  },
+  {
+    id: 'live-wire',
     number: 3,
-    name: 'Plug Face',
+    name: 'Live Wire',
+    shortName: 'Live Wire',
     description:
-      'A wall outlet that reads as a face — two prongs are eyes, the ground hole is a smile. Whimsical, memorable, immediately legible.',
-    Component: PlugFace,
+      'Homage to Reddy Kilowatt and the postwar utility-mascot tradition. A walking, smiling figure with a lightbulb head, lightning-bolt torso, and two-prong-plug feet. Pure 1957 — reads as friendly authority.',
+    bestFor: ['Atomic Mid-Century'],
+    shape: 'Anthropomorphic figure',
+    Component: LiveWire,
   },
   {
-    id: 'mile-high',
+    id: 'kilowatt-crest',
     number: 4,
-    name: 'Mile-High',
+    name: 'Kilowatt Crest',
+    shortName: 'The Crest',
     description:
-      'Three Rocky peaks with a lightning bolt cutting through the alpine sky. Wears the Denver provenance proudly. Best at hero scale.',
-    Component: MileHigh,
+      'Heraldic shield with crossed tools (screwdriver + lineman\'s pliers), a vertical bolt, Rocky peaks, and an EST. 2026 · DENVER banner. Trade-craftsman authority — the badge that goes on a weatherproof patch on the truck door.',
+    bestFor: ['Mountain Heritage', 'Quiet Pro'],
+    shape: 'Heraldic badge',
+    Component: KilowattCrest,
   },
   {
-    id: 'service-patch',
+    id: 'wave-mark',
     number: 5,
-    name: 'Service Patch',
+    name: 'Wave Mark',
+    shortName: 'Wave',
     description:
-      'Vintage workwear oval with a stitched border. The full lockup baked into the mark — handy for invoices, social profile pics, and embroidered uniform patches.',
-    Component: ServicePatch,
-  },
-  {
-    id: 'zz-monogram',
-    number: 6,
-    name: 'ZZ Monogram',
-    description:
-      'Two chunky Z-letters interlocked into a single zig-zag silhouette. Use as a favicon, app icon, or apparel hit when you need just a mark.',
-    Component: ZZMonogram,
+      'A single geometric stroke that reads simultaneously as a lightning bolt and a sine-wave signal. No face, no badge — pure shape. Lives well as an app icon, scales effortlessly, and feels like a software brand built by tradespeople.',
+    bestFor: ['Modern Trade-Tech'],
+    shape: 'Abstract geometric',
+    Component: WaveMark,
   },
 ]

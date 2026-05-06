@@ -40,6 +40,16 @@ export const colors = {
   e500: '#E2602D',
   e600: '#B84B1F',
 
+  // Hazard Red (true 50s service-station signal red)
+  r400: '#E33E2A',
+  r500: '#C8281A',
+  r600: '#9E1F12',
+
+  // Atomic Teal (mid-century motel pool / GE refrigerator)
+  t400: '#5BC4BA',
+  t500: '#3FAFA5',
+  t700: '#1F6F68',
+
   // Sky accent (mile-high blue)
   k300: '#A7D5F0',
   k500: '#7BB7E0',
@@ -103,7 +113,14 @@ export const fonts = {
   // Wordmark + display — chunky retro signpainter
   wordmark: "'Bungee', 'Archivo Black', sans-serif",
   shade: "'Bungee Shade', 'Bungee', sans-serif",
+  outline: "'Bungee Outline', 'Bungee', sans-serif",
   display: "'Archivo Black', 'Bungee', sans-serif",
+  // 50s slab — for "ELECTRIC!" stamps, atomic callouts, banner ribbons
+  slab: "'Alfa Slab One', 'Bungee', serif",
+  // Late-40s art-deco display — for marquee headlines
+  marquee: "'Limelight', 'Bungee', serif",
+  // Striped neon-sign type — for explosive callouts only
+  neon: "'Monoton', 'Bungee', sans-serif",
   // Body
   sans: "'Inter', -apple-system, system-ui, sans-serif",
   // Handwritten accents — taglines, sticky notes, "Done Right!"

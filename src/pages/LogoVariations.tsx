@@ -196,14 +196,14 @@ export function LogoVariations() {
     <>
       <section style={hero}>
         <div style={container}>
-          <span style={eyebrow}>Mark family · six finalists</span>
-          <h1 style={h1}>Six Marks. One Zip Zap.</h1>
+          <span style={eyebrow}>Mark family · five concepts</span>
+          <h1 style={h1}>Five Marks. Pick One.</h1>
           <p style={lede}>
-            Each mark earns its place by doing one job better than the
-            others — Sparky for warmth, Bolt Badge for stamps, Plug Face
-            for icons, Mile-High for hero shots, Service Patch for
-            uniforms, ZZ Monogram for tiny surfaces. Pick the right
-            tool. Don't redraw any of them.
+            Five genuinely different shapes. Sparky has a face — a cartoon
+            mascot. Bolt-Z is a letterform monogram. Live Wire is an
+            anthropomorphic kilowatt-era figure. The Crest is a heraldic
+            badge. Wave Mark is a single geometric stroke. Each renders here
+            at hero, 64px, 32px, mono, and on dark.
           </p>
         </div>
       </section>

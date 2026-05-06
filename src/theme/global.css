@@ -17,6 +17,8 @@
 
   /* Accents */
   --e-500: #E2602D; --e-600: #B84B1F;
+  --r-400: #E33E2A; --r-500: #C8281A; --r-600: #9E1F12;
+  --t-400: #5BC4BA; --t-500: #3FAFA5; --t-700: #1F6F68;
   --k-300: #A7D5F0; --k-500: #7BB7E0; --k-700: #3F7FB0;
   --m-400: #9DC4B8; --m-600: #5E8E83;
 
@@ -47,7 +49,11 @@
 
   --wordmark: 'Bungee', 'Archivo Black', sans-serif;
   --shade: 'Bungee Shade', 'Bungee', sans-serif;
+  --outline: 'Bungee Outline', 'Bungee', sans-serif;
   --display: 'Archivo Black', 'Bungee', sans-serif;
+  --slab: 'Alfa Slab One', 'Bungee', serif;
+  --marquee: 'Limelight', 'Bungee', serif;
+  --neon: 'Monoton', 'Bungee', sans-serif;
   --sans: 'Inter', -apple-system, system-ui, sans-serif;
   --script: 'Caveat Brush', 'Marker Felt', cursive;
   --mono: 'JetBrains Mono', ui-monospace, monospace;

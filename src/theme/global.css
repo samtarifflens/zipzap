@@ -1,0 +1,82 @@
+/* Global reset + CSS custom properties derived from theme/tokens.ts */
+
+:root {
+  --cream: #F8F1DD;
+  --paper: #FFFFFF;
+  --ink: #0E1116;
+
+  /* Volt — primary yellow */
+  --v-50: #FFF9DB; --v-100: #FFF1A8; --v-200: #FFE872; --v-300: #FFDD3F;
+  --v-400: #FFD23F; --v-500: #F2B807; --v-600: #D49500; --v-700: #A6730C;
+  --v-800: #7A540B; --v-900: #4F3608;
+
+  /* Service — uniform navy */
+  --s-50: #E9EEF8; --s-100: #C8D3EC; --s-200: #94A8D8; --s-300: #5F7CC1;
+  --s-400: #3A5BAE; --s-500: #1F3A93; --s-600: #172E78; --s-700: #11225C;
+  --s-800: #0B1740; --s-900: #070F2A;
+
+  /* Accents */
+  --e-500: #E2602D; --e-600: #B84B1F;
+  --k-300: #A7D5F0; --k-500: #7BB7E0; --k-700: #3F7FB0;
+  --m-400: #9DC4B8; --m-600: #5E8E83;
+
+  /* Warm neutrals */
+  --n-50: #F4EFE0; --n-100: #EAE3CF; --n-200: #D6CCAF; --n-300: #B7A988;
+  --n-400: #8E8163; --n-500: #5F5642; --n-600: #403A2C; --n-700: #2B271E;
+  --n-800: #1A1812; --n-900: #0E0D0A;
+
+  --line: rgba(14, 17, 22, 0.10);
+  --line-2: rgba(14, 17, 22, 0.18);
+
+  --grad-bolt: linear-gradient(135deg, #FFD23F 0%, #F2B807 45%, #1F3A93 100%);
+  --grad-service: linear-gradient(135deg, #1F3A93 0%, #11225C 100%);
+  --grad-sunshine: linear-gradient(135deg, #FFE872 0%, #FFD23F 60%, #F2B807 100%);
+  --grad-mile-high: linear-gradient(165deg, #A7D5F0 0%, #FFE872 55%, #E2602D 100%);
+
+  --mesh-light:
+    radial-gradient(ellipse 60% 60% at 14% 18%, #FFE872 0%, transparent 55%),
+    radial-gradient(ellipse 70% 50% at 88% 16%, #A7D5F0 0%, transparent 55%),
+    radial-gradient(ellipse 80% 70% at 50% 70%, #FFD23F 0%, transparent 60%),
+    radial-gradient(ellipse 60% 60% at 88% 86%, #E2602D 0%, transparent 55%),
+    radial-gradient(ellipse 50% 50% at 12% 92%, #1F3A93 0%, transparent 50%),
+    #F8F1DD;
+
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+
+  --halftone: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Ccircle cx='3' cy='3' r='1' fill='%230E1116' opacity='0.18'/%3E%3Ccircle cx='9' cy='9' r='1' fill='%230E1116' opacity='0.18'/%3E%3C/svg%3E");
+
+  --wordmark: 'Bungee', 'Archivo Black', sans-serif;
+  --shade: 'Bungee Shade', 'Bungee', sans-serif;
+  --display: 'Archivo Black', 'Bungee', sans-serif;
+  --sans: 'Inter', -apple-system, system-ui, sans-serif;
+  --script: 'Caveat Brush', 'Marker Felt', cursive;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--sans);
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; }
+em { font-style: italic; }
+button { font-family: inherit; }
+
+@keyframes spark {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-2px) rotate(-2deg); }
+  75% { transform: translateY(2px) rotate(2deg); }
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}

@@ -2,10 +2,10 @@ import type { CSSProperties } from 'react'
 import { logos } from '@/logos'
 import { directions } from '@/data/directions'
 import { AtomicDirection } from '@/pages/options/AtomicDirection'
-import { ModernDirection } from '@/pages/options/ModernDirection'
-import { MountainDirection } from '@/pages/options/MountainDirection'
-import { CartoonDirection } from '@/pages/options/CartoonDirection'
-import { QuietDirection } from '@/pages/options/QuietDirection'
+import { SixtiesDirection } from '@/pages/options/SixtiesDirection'
+import { SeventiesDirection } from '@/pages/options/SeventiesDirection'
+import { EightiesDirection } from '@/pages/options/EightiesDirection'
+import { NinetiesDirection } from '@/pages/options/NinetiesDirection'
 import { colors, fonts, gradients } from '@/theme/tokens'
 import { Sparky } from '@/logos/Sparky'
 
@@ -74,7 +74,7 @@ function Hero() {
             marginBottom: 32,
           }}
         >
-          Five directions. Pick one.
+          One brand. Five decades.
         </div>
         <p
           style={{
@@ -82,15 +82,15 @@ function Hero() {
             fontSize: 19,
             lineHeight: 1.55,
             color: colors.n700,
-            maxWidth: 680,
+            maxWidth: 720,
             margin: '0 auto',
             fontWeight: 500,
           }}
         >
-          Five totally different versions of Zip Zap below — and five logo
-          concepts under that. They're not variations of the same idea, they're
-          five different companies you could choose to be. Pick a vibe. Pick a
-          mark. Mix and match.
+          The same Zip Zap, dressed up in five different decades. 50s atomic
+          mid-century, 60s psychedelic, 70s earthy funk, 80s neon synthwave,
+          90s splat-slime. Every direction is retro, whimsical, and fun — pick
+          the decade that feels like home, then pair it with a logo below.
         </p>
         <div
           style={{
@@ -460,17 +460,17 @@ export function Options() {
       <div id="dir-atomic">
         <AtomicDirection />
       </div>
-      <div id="dir-modern">
-        <ModernDirection />
+      <div id="dir-sixties">
+        <SixtiesDirection />
       </div>
-      <div id="dir-mountain">
-        <MountainDirection />
+      <div id="dir-seventies">
+        <SeventiesDirection />
       </div>
-      <div id="dir-cartoon">
-        <CartoonDirection />
+      <div id="dir-eighties">
+        <EightiesDirection />
       </div>
-      <div id="dir-quiet">
-        <QuietDirection />
+      <div id="dir-nineties">
+        <NinetiesDirection />
       </div>
       <LogoGallery />
       <HowToChoose />
